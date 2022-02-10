@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="fundo">
+                <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p class="resultado" id="resultado"></p>
+            <table>
+                    <tr>
+                        <td><button class="btn" id="C" onclick="limpar()">C</button></td>
+                        <td><button class="btn" id="<" onclick="apagar()"><</button></td>
+                        <td><button class="btn" id="/" onclick="input('/')">/</button></td>
+                        <td><button class="btn" id="X" onclick="input('*')">X</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="btn" id="7" onclick="input('7')">7</button></td>
+                        <td><button class="btn" id="8" onclick="input('8')">8</button></td>
+                        <td><button class="btn" id="9" onclick="input('9')">9</button></td>
+                        <td><button class="btn" id="-" onclick="input('-')">-</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="btn" id="4" onclick="input('4')">4</button></td>
+                        <td><button class="btn" id="5" onclick="input('5')">5</button></td>
+                        <td><button class="btn" id="6" onclick="input('6')">6</button></td>
+                        <td><button class="btn" id="+" onclick="input('+')">+</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="btn" id="1" onclick="input('1')">1</button></td>
+                        <td><button class="btn" id="2" onclick="input('2')">2</button></td>
+                        <td><button class="btn" id="3" onclick="input('3')">3</button></td>
+                        <td rowspan="2"><button class="btn" style="height: 106px;" onclick="calcular()" >=</button></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><button class="btn" style="width: 106px" id="0" onclick="input('0')" >0</button></td>
+                        <td><button class="btn" id="," onclick="input(',')">,</button></td>
+            
+                    </tr>
+
+                </table>
+        </div>
+
+        
+    <div>
+            <h4>Desenvolvido por: Gabriel Peixoto</h4>
+    </div>
+    </div>  
+  
+    
+
+<script src="script.js" ></script>
+</body>
+</html>
