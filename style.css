@@ -45,9 +45,10 @@
   width: 207px;
   margin: 5px;
   padding: 2px;
+  overflow: hidden;
 }
 
 h4 {
   float: right;
-  margin-top: 47%;
+  
 }
