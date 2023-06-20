@@ -11,48 +11,50 @@
     <div class="fundo">
                 <div class="calculadora">
             <h1>Calculadora</h1>
-            <p class="resultado" id="resultado"></p>
+            <!--<p class="resultado" id="resultado2"></p>-->
+            <input class="resultado" id="resultado" readonly></p>
             <table>
                     <tr>
                         <td><button class="btn" id="C" onclick="limpar()">C</button></td>
-                        <td><button class="btn" id="<" onclick="apagar()"><</button></td>
-                        <td><button class="btn" id="/" onclick="input('/')">/</button></td>
-                        <td><button class="btn" id="X" onclick="input('*')">X</button></td>
+                        <td><button class="btn" id="<" onclick="apagarUltimoCaractere()"><</button></td>
+                        <td><button class="btn" id="/" onclick="adicionarOperador('/')">/</button></td>
+                        <td><button class="btn" id="X" onclick="adicionarOperador('*')">X</button></td>
                     </tr>
 
                     <tr>
-                        <td><button class="btn" id="7" onclick="input('7')">7</button></td>
-                        <td><button class="btn" id="8" onclick="input('8')">8</button></td>
-                        <td><button class="btn" id="9" onclick="input('9')">9</button></td>
-                        <td><button class="btn" id="-" onclick="input('-')">-</button></td>
+                        <td><button class="btn" id="7" onclick="adicionarNumero(7)">7</button></td>
+                        <td><button class="btn" id="8" onclick="adicionarNumero(8)">8</button></td>
+                        <td><button class="btn" id="9" onclick="adicionarNumero(9)">9</button></td>
+                        <td><button class="btn" id="-" onclick="adicionarOperador('-')">-</button></td>
                     </tr>
 
                     <tr>
-                        <td><button class="btn" id="4" onclick="input('4')">4</button></td>
-                        <td><button class="btn" id="5" onclick="input('5')">5</button></td>
-                        <td><button class="btn" id="6" onclick="input('6')">6</button></td>
-                        <td><button class="btn" id="+" onclick="input('+')">+</button></td>
+                        <td><button class="btn" id="4" onclick="adicionarNumero(4)">4</button></td>
+                        <td><button class="btn" id="5" onclick="adicionarNumero(5)">5</button></td>
+                        <td><button class="btn" id="6" onclick="adicionarNumero(6)">6</button></td>
+                        <td><button class="btn" id="+" onclick="adicionarOperador('+')">+</button></td>
                     </tr>
 
                     <tr>
-                        <td><button class="btn" id="1" onclick="input('1')">1</button></td>
-                        <td><button class="btn" id="2" onclick="input('2')">2</button></td>
-                        <td><button class="btn" id="3" onclick="input('3')">3</button></td>
+                        <td><button class="btn" id="1" onclick="adicionarNumero(1)">1</button></td>
+                        <td><button class="btn" id="2" onclick="adicionarNumero(2)">2</button></td>
+                        <td><button class="btn" id="3" onclick="adicionarNumero(3)">3</button></td>
                         <td rowspan="2"><button class="btn" style="height: 106px;" onclick="calcular()" >=</button></td>
                     </tr>
 
                     <tr>
-                        <td colspan="2"><button class="btn" style="width: 106px" id="0" onclick="input('0')" >0</button></td>
-                        <td><button class="btn" id="," onclick="input(',')">,</button></td>
+                        <td colspan="2"><button class="btn" style="width: 106px" id="0" onclick="adicionarNumero(0)" >0</button></td>
+                        <td><button class="btn" id="," onclick="adicionarOperador('.')">,</button></td>
             
                     </tr>
+                    
 
                 </table>
         </div>
 
         
     <div>
-            <h4>Desenvolvido por: Gabriel Peixoto</h4>
+           <h4>Desenvolvido por: Gabriel Peixoto</h4>
     </div>
     </div>  
   
