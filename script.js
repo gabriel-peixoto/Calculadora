@@ -63,7 +63,7 @@ function apagarUltimoCaractere() {
           resultado.value += key;
         } else if (key === "Escape") {
           limpar();
-            else if (key === ",") {
+        } else if (key === ",") {
           adicionarOperador('.');
         }
       });
